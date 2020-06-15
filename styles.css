@@ -488,7 +488,7 @@ header {
   display: block;
   border: none;
   padding: 5px 0;
-  outlet: none;
+  outline: none;
 }
 
 .label__input {
@@ -505,6 +505,10 @@ header {
   border-bottom: 1px solid #000;
   width: 100%;
   padding: 10px;
+}
+
+textarea {
+  resize: none;
 }
 
 .contact__info {
@@ -545,6 +549,7 @@ footer {
   height: 30px;
   line-height: 30px;
   background-color: var(--main-blue);
+  color: var(--main-red);
 }
 
 /* End of Footer Styling */
