@@ -46,7 +46,7 @@
 
     <!-- Start of Services Section -->
 
-    <div class="services page-section">
+    <div class="services page-paddings">
       <div class="services__container">
         <div class="services__description">
           <h2 class="services__description__title"><i class="fas fa-box-open"></i>Sell Your Product</h2>
@@ -194,13 +194,14 @@
       <!-- End of Testimonials Section -->
 
       <!-- Start of Our Team Section -->
-      <div class="team">
+      <div class="team page-paddings">
+        <div class="team__overlay"></div>
         <h1 class="team__title"><i class="fas fa-user-friends"></i>Our Team</h1>
         <div class="team__content">
           <div class="team__cube">
             <img src="./images/team1.jpg" alt="team" />
             <h5 class="team__name">John Doe</h5>
-            <h6 class="team__title">Founder and CEO of doFollow</h6>
+            <h6 class="team__subtitle">Founder and CEO of doFollow</h6>
             <p class="team__details">
               Illo laboriosam consequuntur fuga eaque. Consequatur sunt laborum perspiciatis doloremque. Totam
               est ipsum consectetur ipsa rem animi reiciendis aut expedita, dolores sunt?
@@ -209,7 +210,7 @@
           <div class="team__cube">
             <img src="./images/team2.jpeg" alt="team" />
             <h5 class="team__name">John Doe</h5>
-            <h6 class="team__title">Lead Designer</h6>
+            <h6 class="team__subtitle">Lead Designer</h6>
             <p class="team__details">
               Illo laboriosam consequuntur fuga eaque. Consequatur sunt laborum perspiciatis doloremque. Totam
               est ipsum consectetur ipsa rem animi reiciendis aut expedita, dolores sunt?
@@ -218,7 +219,7 @@
           <div class="team__cube">
             <img src="./images/team3.jpg" alt="team" />
             <h5 class="team__name">John Doe</h5>
-            <h6 class="team__title">Lead Animator</h6>
+            <h6 class="team__subtitle">Lead Animator</h6>
             <p class="team__details">
               Illo laboriosam consequuntur fuga eaque. Consequatur sunt laborum perspiciatis doloremque. Totam
               est ipsum consectetur ipsa rem animi reiciendis aut expedita, dolores sunt?
@@ -227,7 +228,7 @@
           <div class="team__cube">
             <img src="./images/team4.jpeg" alt="team" />
             <h5 class="team__name">John Doe</h5>
-            <h6 class="team__title">Customer Support</h6>
+            <h6 class="team__subtitle">Customer Support</h6>
             <p class="team__details">
               Illo laboriosam consequuntur fuga eaque. Consequatur sunt laborum perspiciatis doloremque. Totam
               est ipsum consectetur ipsa rem animi reiciendis aut expedita, dolores sunt?
@@ -236,10 +237,9 @@
         </div>
       </div>
       <!-- End of Our Team Section -->
-
       <!-- Start of FAQ Section -->
 
-      <div class="faq">
+      <div class="faq page-paddings">
         <h1 class="faq__title"><i class="fas fa-question-circle"></i>Frequently Asked Questions</h1>
         <h4 class="faq__subtitle">Some of the most common questions we get asked</h4>
         <div class="faq__container">
@@ -281,40 +281,50 @@
 
       <!-- Start of Contact Section -->
 
-      <div class="contact">
-        <h1 class="contact__title">Contact Us</h1>
+      <div class="contact page-paddings">
+        <h1 class="contact__title"><i class="fas fa-file-signature"></i>Contact Us</h1>
         <h5 class="contact__subtitle">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</h5>
         <div class="contact__container">
           <div class="contact__form">
             <form>
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Name" />
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Email" />
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Write something..."
-                style="height: 200px;"
-              ></textarea>
-              <input type="submit" value="Submit" />
+              <div class="label__input">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" />
+              </div>
+              <div class="label__input">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" />
+              </div>
+              <div class="label__input">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write something..."
+                  style="height: 200px;"
+                ></textarea>
+              </div>
+              <div class="label__input">
+                <input type="submit" value="Submit" />
+              </div>
             </form>
           </div>
           <div class="contact__info">
-            <h5 class="contact__info__title">Contact Info</h5>
-            <p class="contact__info__address">1502 N Elm St, Fairmont, MN, 56031</p>
-            <p class="contact__info__country">United Stated</p>
-            <p class="contact__info__phone">+00 123-456-789</p>
-            <p class="contact__info__email">email@yourdomain.com</p>
-            <p class="contact__info__website">www.yourdomain.com</p>
-            <div class="contact__info__social">
-              <span><i class="fab fa-facebook-square"></i></span>
-              <span><i class="fab fa-instagram"></i></span>
-              <span><i class="fab fa-twitter-square"></i></span>
-              <span><i class="fab fa-pinterest-square"></i></span>
-              <span><i class="fab fa-youtube"></i></span>
-              <span><i class="fab fa-google-plus"></i></span>
+            <div class="contact__info__content">
+              <h3 class="contact__info__title">Contact Info</h3>
+              <p class="contact__info__address">1502 N Elm St, Fairmont, MN, 56031</p>
+              <p class="contact__info__country">United Stated</p>
+              <p class="contact__info__phone">+00 123-456-789</p>
+              <p class="contact__info__email">email@yourdomain.com</p>
+              <p class="contact__info__website">www.yourdomain.com</p>
+              <div class="contact__info__social">
+                <span><i class="fab fa-facebook-square"></i></span>
+                <span><i class="fab fa-instagram"></i></span>
+                <span><i class="fab fa-twitter-square"></i></span>
+                <span><i class="fab fa-pinterest-square"></i></span>
+                <span><i class="fab fa-youtube"></i></span>
+                <span><i class="fab fa-google-plus"></i></span>
+              </div>
             </div>
           </div>
         </div>
