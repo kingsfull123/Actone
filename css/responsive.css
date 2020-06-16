@@ -8,6 +8,13 @@
     padding: 5em 3em;
   }
 
+  .product-image {
+    width: 280px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+  }
+
   /* End of General Setting */
 
   /* Start of Navigation Styling */
@@ -24,11 +31,12 @@
     max-width: 1450px;
     width: 90%;
     position: absolute;
-    top: 10px;
+    top: 0.8em;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 20px;
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.38);
+    padding: 0.5em;
   }
 
   .header__container {
@@ -68,6 +76,17 @@
 /* Screen Minimum Size 1024px or Larger */
 
 @media (min-width: 1024px) {
+  /* General Settings */
+
+  .product-image {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+  }
+
+  /* End of General Setting */
+
   /* Start of Group Setting */
 
   .hero__content,
@@ -87,6 +106,17 @@
   }
 
   /* End of group settings */
+
+  /* Start of Hero Section Styling */
+
+  .hero {
+    width: 100%;
+    height: 880px;
+    display: flex;
+    margin: auto;
+  }
+
+  /* Eed of Hero Section Styling */
 
   /* Start of Features Section Styling */
   .feature__two__content {
@@ -124,6 +154,16 @@
     z-index: -1;
   }
 
+  .team__cube {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.135);
+  }
+
+  .team__details {
+    padding: 0 15px 15px 15px;
+  }
+
   /* End of Team Section Styling */
 
   /* Start of Contact Section Styling */
@@ -140,4 +180,21 @@
   }
 
   /* End of Contact Section Styling */
+}
+
+@media (min-width: 1224px) {
+  * {
+    font-size: 19px;
+  }
+
+  /* Start of Hero Section Styling */
+
+  .hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+  }
+
+  /* Eed of Hero Section Styling */
 }
