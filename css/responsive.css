@@ -1,0 +1,143 @@
+/* Website Responsiveness */
+/* Screen Minimum Size 768px or Larger */
+
+@media (min-width: 768px) {
+  /* Start of General Settings */
+
+  .page-section {
+    padding: 5em 3em;
+  }
+
+  /* End of General Setting */
+
+  /* Start of Navigation Styling */
+
+  .navigation__icon__container {
+    display: none;
+  }
+
+  haeder {
+    position: relative;
+  }
+
+  .header {
+    max-width: 1450px;
+    width: 90%;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.38);
+  }
+
+  .header__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation__content {
+    display: flex;
+  }
+
+  .navigation__list {
+    list-style: none;
+  }
+
+  .navigation__item {
+    text-decoration: none;
+    font-size: 0.75em;
+    color: var(--main-yellow);
+    padding: 0 10px;
+    border-right: 1px solid var(--main-yellow);
+  }
+
+  .last {
+    border: none;
+  }
+}
+
+/* End of Navigation Styling */
+
+/* Screen Minimum Size 1024px or Larger */
+
+@media (min-width: 1024px) {
+  /* Start of Group Setting */
+
+  .hero__content,
+  .services__content,
+  .feature__container,
+  .testimonials__container,
+  .team__content,
+  .faq__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 4em;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* End of group settings */
+
+  /* Start of Features Section Styling */
+  .feature__two__content {
+    grid-column: 1/2;
+    grid-row: 1/1;
+  }
+
+  .feature__two__images {
+    grid-column: 2/3;
+    grid-row: 1/1;
+  }
+
+  /* End of Features Section Styling */
+
+  /* Start of Team Section Styling */
+  .team {
+    background-image: url("../images/team.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -2;
+  }
+
+  .team__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: -1;
+  }
+
+  /* End of Team Section Styling */
+
+  /* Start of Contact Section Styling */
+
+  .contact__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 3em;
+  }
+
+  .contact__form {
+    margin-bottom: 0em;
+  }
+
+  /* End of Contact Section Styling */
+}

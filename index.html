@@ -4,53 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/3ca10d6b55.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <title>Actone</title>
   </head>
   <body>
     <!-- Start of Header Section -->
     <header>
-      <div class="header__container">
-        <div class="logo__container">
-          <img src="./images/logo.svg" alt="logo" />
+      <div class="header">
+        <div class="header__container">
+          <div class="logo__container">
+            <img src="./images/logo.svg" alt="logo" />
+          </div>
+          <nav class="navigation">
+            <ul class="navigation__content">
+              <li class="navigation__list"><a class="navigation__item" href="#">Home</a></li>
+              <li class="navigation__list"><a class="navigation__item" href="#">Services</a></li>
+              <li class="navigation__list"><a class="navigation__item" href="#">Features</a></li>
+              <li class="navigation__list"><a class="navigation__item" href="#">Testimonial</a></li>
+              <li class="navigation__list"><a class="navigation__item" href="#">Our Team</a></li>
+              <li class="navigation__list"><a class="navigation__item" href="#">FAQ</a></li>
+              <li class="navigation__list"><a class="last navigation__item" href="#">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="navigation">
-          <ul class="navigation__container">
-            <li class="navigation__list"><a class="navigation__item" href="#">Home</a></li>
-            <li class="navigation__list"><a class="navigation__item" href="#">Services</a></li>
-            <li class="navigation__list"><a class="navigation__item" href="#">Features</a></li>
-            <li class="navigation__list"><a class="navigation__item" href="#">Testimonial</a></li>
-            <li class="navigation__list"><a class="navigation__item" href="#">Our Team</a></li>
-            <li class="navigation__list"><a class="navigation__item" href="#">FAQ</a></li>
-            <li class="navigation__list"><a class="navigation__item" href="#">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="navigation__icon__container">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
     </header>
     <!-- End of Header Section -->
 
     <!-- Start of Hero Section -->
-    <section class="hero">
-      <div class="hero__img">
-        <img src="./images/app-iphone.png" alt="iphone" />
-      </div>
-      <div class="hero__container">
-        <h1 class="hero__title">Streamline your workflow with Stack</h1>
-        <h6 class="hero__subtitle">
-          Build lean, beautiful websites with a clean and contemporary look to suit a range of purposes
-        </h6>
-        <input class="submit button" type="submit" value="Contact Us" />
+    <section class="hero page-section">
+      <div class="hero__content">
+        <div class="hero__img product-image">
+          <img src="./images/app-iphone.png" alt="iphone" />
+        </div>
+        <div class="hero__container">
+          <h1 class="hero__title title text-shadow">Streamline your workflow with Stack</h1>
+          <h6 class="hero__subtitle">
+            Build lean, beautiful websites with a clean and contemporary look to suit a range of purposes
+          </h6>
+          <input class="heroBtn button" type="submit" value="Contact Us" />
+        </div>
       </div>
     </section>
     <!-- End of About Section -->
 
     <!-- Start of Services Section -->
 
-    <div class="services page-paddings">
+    <div class="services page-section">
       <div class="services__container">
         <div class="services__description">
-          <h2 class="services__description__title"><i class="fas fa-box-open"></i>Sell Your Product</h2>
-          <p class="services__description__text">
+          <h1 class="services__description__title title text-shadow">
+            <i class="fas fa-box-open"></i>Sell Your Product
+          </h1>
+          <p class="services__description__text text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
           </p>
@@ -61,18 +75,22 @@
               <i class="fas fa-desktop"></i>
             </div>
             <div class="services__details">
-              <h5 class="services__details__title">Responsive & Retina ready</h5>
-              <p class="services__details__text">Follow looks great on any device of your choice</p>
+              <h5 class="services__details__title subtitle">Responsive & Retina ready</h5>
+              <p class="services__details__text text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi iure quasi? Suscipit velit
+                consequuntur facilis, architecto repellat dolorem. Vel quas repudiandae error cumque magni.
+              </p>
             </div>
           </div>
           <div class="services__cube">
             <div class="services__cube__icon">
-              <i class="fas fa-american-sign-language-interpreting"></i>
+              <i class="fab fa-algolia"></i>
             </div>
             <div class="services__details">
-              <h5 class="services__details__title">Unlimited color options</h5>
-              <p class="services__details__text">
-                Change colors easily and give your landing page a new look in seconds
+              <h5 class="services__details__title subtitle">Unlimited color options</h5>
+              <p class="services__details__text text">
+                Voluptas, vitae. Rem, sapiente! Minus eos cum explicabo praesentium, voluptates quod maxime
+                quidem dignissimos cupiditate sequi atque deleniti eaque voluptatibus maiores nisi illum?
               </p>
             </div>
           </div>
@@ -81,262 +99,281 @@
               <i class="fas fa-comment"></i>
             </div>
             <div class="services__details">
-              <h5 class="services__details__title">Made for conversion</h5>
-              <p class="services__details__text">A layout that showcases your product with style</p>
+              <h5 class="services__details__title subtitle">Made for conversion</h5>
+              <p class="services__details__text text">
+                Officia necessitatibus iure amet consequuntur quibusdam maxime corporis, praesentium, error
+                earum maiores illo voluptates corrupti fuga pariatur inventore laborum tempora facilis neque
+                in ipsam!
+              </p>
             </div>
           </div>
-        </div>
-        </div>
-      </div>
-
-      <!-- End of Services section -->
-
-      <!-- Start of Feature One Section -->
-
-      <div class="feature page-paddings">
-        <div class="feature__container">
-          <div class="feature__images">
-            <img src="./images/iphone-11-v.png" alt="iphone" />
-          </div>
-          <div class="feature__content">
-            <h3 class="feature__title">Talke to your friends</h3>
-            <p class="generic__text feature__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-            </p>
-            <p class="generic__text feature__description">
-              Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <input type="submit" value="Find out more" class="button__alt feature__button" />
-          </div>
-        </div>
-      </div>
-
-      <!-- End of Features one Section -->
-
-      <!-- Start of Feature two Section -->
-
-      <div class="feature feature__two page-paddings">
-        <div class="feature__container">
-          <div class="feature__content">
-            <h3 class="feature__title">Engage friends with messages</h3>
-            <p class="generic__text feature__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <ul class="feature__listing">
-              <li class="feature__list">
-                <i class="fas fa-check-circle"></i>Nemo enim ipsam voluptatem quia voluptas
-              </li>
-              <li class="feature__list">
-                <i class="fas fa-check-circle"></i>Ut enim ad minima veniam, quis nostrum exercit
-              </li>
-              <li class="feature__list">
-                <i class="fas fa-check-circle"></i>Et harum quidem rerum facilis expedita
-              </li>
-            </ul>
-            <input type="submit" value="Find out more" class="button feature__button" />
-          </div>
-          <div class="feature__images">
-            <img src="./images/image-twophones-v.png" alt="iphone" />
-          </div>
-        </div>
-      </div>
-
-      <!-- End of Features two Section -->
-
-      <!-- Start of Feature Three Section -->
-
-      <div class="feature page-paddings">
-        <div class="feature__container">
-          <div class="feature__images">
-            <img src="./images/phones-bottom.png" alt="iphone" />
-          </div>
-          <div class="feature__content">
-            <h3 class="feature__title">Talke to your friends</h3>
-            <p class="generic__text feature__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-            </p>
-            <p class="generic__text feature__description">
-              Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <input type="submit" value="Find out more" class="button__alt feature__button" />
-          </div>
-        </div>
-      </div>
-
-      <!-- End of Features Three Section -->
-
-      <!-- Start of Testimonials Section -->
-
-      <div class="testimonials page-paddings">
-        <div class="testimonials__container">
-          <div class="testimonials__content">
-            <i class="fas fa-quote-left"></i>
-            <div class="testimonials__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam consequuntur fuga
-              eaque. Consequatur sunt laborum perspiciatis doloremque. Totam est ipsum consectetur ipsa rem
-              animi reiciendis aut expedita, dolores sunt?
+          <div class="services__cube">
+            <div class="services__cube__icon">
+              <i class="fas fa-address-card"></i>
             </div>
-            <i class="fas fa-quote-right"></i>
-            <h5 class="testimonials__name"></h5>
-          </div>
-          <div class="testimonials__image">
-            <img src="./images/testimonial.png" alt="testimonials" />
-          </div>
-        </div>
-      </div>
-
-      <!-- End of Testimonials Section -->
-
-      <!-- Start of Our Team Section -->
-      <div class="team page-paddings">
-        <div class="team__overlay"></div>
-        <h1 class="team__title"><i class="fas fa-user-friends"></i>Our Team</h1>
-        <div class="team__content">
-          <div class="team__cube">
-            <img src="./images/team1.jpg" alt="team" />
-            <h5 class="team__name">John Doe</h5>
-            <h6 class="team__subtitle">Founder and CEO of doFollow</h6>
-            <p class="team__details">
-              Illo laboriosam consequuntur fuga eaque. Consequatur sunt laborum perspiciatis doloremque. Totam
-              est ipsum consectetur ipsa rem animi reiciendis aut expedita, dolores sunt?
-            </p>
-          </div>
-          <div class="team__cube">
-            <img src="./images/team2.jpeg" alt="team" />
-            <h5 class="team__name">John Doe</h5>
-            <h6 class="team__subtitle">Lead Designer</h6>
-            <p class="team__details">
-              Illo laboriosam consequuntur fuga eaque. Consequatur sunt laborum perspiciatis doloremque. Totam
-              est ipsum consectetur ipsa rem animi reiciendis aut expedita, dolores sunt?
-            </p>
-          </div>
-          <div class="team__cube">
-            <img src="./images/team3.jpg" alt="team" />
-            <h5 class="team__name">John Doe</h5>
-            <h6 class="team__subtitle">Lead Animator</h6>
-            <p class="team__details">
-              Illo laboriosam consequuntur fuga eaque. Consequatur sunt laborum perspiciatis doloremque. Totam
-              est ipsum consectetur ipsa rem animi reiciendis aut expedita, dolores sunt?
-            </p>
-          </div>
-          <div class="team__cube">
-            <img src="./images/team4.jpeg" alt="team" />
-            <h5 class="team__name">John Doe</h5>
-            <h6 class="team__subtitle">Customer Support</h6>
-            <p class="team__details">
-              Illo laboriosam consequuntur fuga eaque. Consequatur sunt laborum perspiciatis doloremque. Totam
-              est ipsum consectetur ipsa rem animi reiciendis aut expedita, dolores sunt?
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- End of Our Team Section -->
-      <!-- Start of FAQ Section -->
-
-      <div class="faq page-paddings">
-        <h1 class="faq__title"><i class="fas fa-question-circle"></i>Frequently Asked Questions</h1>
-        <h4 class="faq__subtitle">Some of the most common questions we get asked</h4>
-        <div class="faq__container">
-          <div class="faq__cube">
-            <h3 class="faq__cube__title">Lorem ipsum dolor sit ametelit?</h3>
-            <p class="faq__cube__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit
-            </p>
-          </div>
-          <div class="faq__cube">
-            <h3 class="faq__cube__title">Ut enim ad minim veniam, quis nostrud?</h3>
-            <p class="faq__cube__text">
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
-          </div>
-          <div class="faq__cube">
-            <h3 class="faq__cube__title">Cnsectetur adipiscing elit, sed do?</h3>
-            <p class="faq__cube__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem
-              ipsum dolor sit amet, consectetur
-            </p>
-          </div>
-          <div class="faq__cube">
-            <h3 class="faq__cube__title">Qis nostrud exercitation ullamco?</h3>
-            <p class="faq__cube__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem
-              ipsum dolor sit amet, consectetur
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- End of FAQ Section -->
-
-      <!-- Start of Contact Section -->
-
-      <div class="contact page-paddings">
-        <h1 class="contact__title"><i class="fas fa-file-signature"></i>Contact Us</h1>
-        <h5 class="contact__subtitle">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</h5>
-        <div class="contact__container">
-          <div class="contact__form">
-            <form>
-              <div class="label__input">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Name" />
-              </div>
-              <div class="label__input">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email" />
-              </div>
-              <div class="label__input">
-                <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Write something..."
-                  style="height: 200px;"
-                ></textarea>
-              </div>
-              <div class="label__input">
-                <input type="submit" value="Submit" />
-              </div>
-            </form>
-          </div>
-          <div class="contact__info">
-            <div class="contact__info__content">
-              <h3 class="contact__info__title">Contact Info</h3>
-              <p class="contact__info__address">1502 N Elm St, Fairmont, MN, 56031</p>
-              <p class="contact__info__country">United Stated</p>
-              <p class="contact__info__phone">+00 123-456-789</p>
-              <p class="contact__info__email">email@yourdomain.com</p>
-              <p class="contact__info__website">www.yourdomain.com</p>
-              <div class="contact__info__social">
-                <span><i class="fab fa-facebook-square"></i></span>
-                <span><i class="fab fa-instagram"></i></span>
-                <span><i class="fab fa-twitter-square"></i></span>
-                <span><i class="fab fa-pinterest-square"></i></span>
-                <span><i class="fab fa-youtube"></i></span>
-                <span><i class="fab fa-google-plus"></i></span>
-              </div>
+            <div class="services__details">
+              <h5 class="services__details__title subtitle">Made for conversion</h5>
+              <p class="services__details__text text">
+                Officiis minus et, modi ex quibusdam, dolores suscipit rerum facilis nulla quidem in
+                perferendis aliquam officia aperiam quas.
+              </p>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- End of Contact Section -->
-
-      <!-- Start of Footer Section -->
-
-      <footer>&copy; 2020 Copyright Actone</footer>
-
-      <!-- End of Footer Section -->
     </div>
+
+    <!-- End of Services section -->
+
+    <!-- Start of Feature One Section -->
+
+    <div class="feature page-section">
+      <div class="feature__container">
+        <div class="feature__images product-image">
+          <img src="./images/iphone-11-v.png" alt="iphone" />
+        </div>
+        <div class="feature__content">
+          <h3 class="feature__title title text-shadow">Talke to your friends</h3>
+          <p class="generic__text feature__description text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+          </p>
+          <p class="generic__text feature__description text">
+            Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+            in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <input type="submit" value="Find out more" class="feature__button button" />
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Features one Section -->
+
+    <!-- Start of Feature two Section -->
+
+    <div class="feature feature__two page-section">
+      <div class="feature__container">
+        <div class="feature__two__images product-image">
+          <img src="./images/image-twophones-v.png" alt="iphone" />
+        </div>
+        <div class="feature__two__content">
+          <h3 class="feature__title title text-shadow">Engage friends with messages</h3>
+          <p class="generic__text feature__description text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <ul class="feature__two__listing">
+            <li class="feature__list">
+              <i class="fas fa-check-circle text"></i>Nemo enim ipsam voluptatem quia voluptas
+            </li>
+            <li class="feature__list">
+              <i class="fas fa-check-circle text"></i>Ut enim ad minima veniam, quis nostrum exercit
+            </li>
+            <li class="feature__list">
+              <i class="fas fa-check-circle text"></i>Et harum quidem rerum facilis expedita
+            </li>
+          </ul>
+          <input type="submit" value="Find out more" class="button button__alt feature__button" />
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Features two Section -->
+
+    <!-- Start of Feature Three Section -->
+
+    <div class="feature page-section">
+      <div class="feature__container">
+        <div class="feature__images product-image">
+          <img src="./images/phones-bottom.png" alt="iphone" />
+        </div>
+        <div class="feature__content">
+          <h3 class="feature__title title text-shadow">Talke to your friends</h3>
+          <p class="generic__text feature__description text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+          </p>
+          <p class="generic__text feature__description text">
+            Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+            in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <input type="submit" value="Find out more" class="feature__button button" />
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Features Three Section -->
+
+    <!-- Start of Testimonials Section -->
+
+    <div class="testimonials page-section">
+      <div class="testimonials__container">
+        <div class="testimonials__content">
+          <i class="fas fa-quote-left"></i>
+          <div class="testimonials__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam consequuntur fuga eaque.
+            Consequatur sunt laborum perspiciatis doloremque. Totam est ipsum consectetur ipsa rem animi
+            reiciendis aut expedita, dolores sunt?
+          </div>
+          <i class="fas fa-quote-right"></i>
+          <h5 class="testimonials__name"></h5>
+        </div>
+        <div class="testimonials__image">
+          <img src="./images/testimonial.png" alt="testimonials" />
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Testimonials Section -->
+
+    <!-- Start of Our Team Section -->
+    <div class="team page-section">
+      <div class="team__overlay"></div>
+      <h1 class="team__title title text-shadow"><i class="fas fa-user-friends"></i>Our Team</h1>
+      <div class="team__content">
+        <div class="team__cube">
+          <img src="./images/team1.jpg" alt="team" />
+          <h5 class="team__name subtitle-alt">John Doe</h5>
+          <h6 class="team__subtitle subtitle">Founder and CEO of doFollow</h6>
+          <p class="team__details text">
+            Illo laboriosam consequuntur fuga eaque. Consequatur sunt laborum perspiciatis doloremque. Totam
+            est ipsum consectetur ipsa rem animi reiciendis aut expedita, dolores sunt?
+          </p>
+        </div>
+        <div class="team__cube">
+          <img src="./images/team2.jpeg" alt="team" />
+          <h5 class="team__name subtitle-alt">John Doe</h5>
+          <h6 class="team__subtitle subtitle">Lead Designer</h6>
+          <p class="team__details text">
+            Illo laboriosam consequuntur fuga eaque. Consequatur sunt laborum perspiciatis doloremque. Totam
+            est ipsum consectetur ipsa rem animi reiciendis aut expedita, dolores sunt?
+          </p>
+        </div>
+        <div class="team__cube">
+          <img src="./images/team3.jpg" alt="team" />
+          <h5 class="team__name subtitle-alt">John Doe</h5>
+          <h6 class="team__subtitle subtitle">Lead Animator</h6>
+          <p class="team__details text">
+            Illo laboriosam consequuntur fuga eaque. Consequatur sunt laborum perspiciatis doloremque. Totam
+            est ipsum consectetur ipsa rem animi reiciendis aut expedita, dolores sunt?
+          </p>
+        </div>
+        <div class="team__cube">
+          <img src="./images/team4.jpeg" alt="team" />
+          <h5 class="team__name subtitle-alt">John Doe</h5>
+          <h6 class="team__subtitle subtitle">Customer Support</h6>
+          <p class="team__details text">
+            Illo laboriosam consequuntur fuga eaque. Consequatur sunt laborum perspiciatis doloremque. Totam
+            est ipsum consectetur ipsa rem animi reiciendis aut expedita, dolores sunt?
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End of Our Team Section -->
+    <!-- Start of FAQ Section -->
+
+    <div class="faq page-section">
+      <h1 class="faq__title title text-shadow">
+        <i class="fas fa-question-circle"></i>Frequently Asked Questions
+      </h1>
+      <h4 class="faq__subtitle subtitle-alt">Some of the most common questions we get asked</h4>
+      <div class="faq__container">
+        <div class="faq__cube">
+          <h3 class="faq__cube__title subtitle">Lorem ipsum dolor sit ametelit?</h3>
+          <p class="faq__cube__text text">
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            Integer at sollicitudin enim. Morbi eget metus libero. Aenean in leo libero.
+          </p>
+        </div>
+        <div class="faq__cube">
+          <h3 class="faq__cube__title subtitle">Ut enim ad minim, quis nostrud?</h3>
+          <p class="faq__cube__text text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="faq__cube">
+          <h3 class="faq__cube__title subtitle">Cnsectetur adipiscing elit, sed do?</h3>
+          <p class="faq__cube__text text">
+            Cras viverra dapibus imperdiet. Proin ut posuere est, sed ultrices orci. Duis vel rhoncus ligula.
+            Praesent rhoncus tortor ac placerat cursus. Aenean sodales facilisis tellus. Vivamus condimentum
+            augue vitae feugiat rutrum.
+          </p>
+        </div>
+        <div class="faq__cube">
+          <h3 class="faq__cube__title subtitle">Qis nostrud exercitation ullamco?</h3>
+          <p class="faq__cube__text text">
+            Mauris aliquam congue nisi, id tincidunt turpis porta ullamcorper. Proin ullamcorper justo vel
+            lectus tempus scelerisque. Nullam ipsum sapien, fringilla quis lectus eu, tempor dictum ligula.
+            Etiam sodales tellus eget risus eleifend, nec vulputate turpis consectetur. Donec posuere sed
+            justo in dapibus.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of FAQ Section -->
+
+    <!-- Start of Contact Section -->
+
+    <div class="contact page-section">
+      <h1 class="contact__title title text-shadow"><i class="fas fa-file-signature"></i>Contact Us</h1>
+      <h5 class="contact__subtitle subtitle-alt">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+      </h5>
+      <div class="contact__container">
+        <div class="contact__form">
+          <form>
+            <div class="label__input">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Name" />
+            </div>
+            <div class="label__input">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" />
+            </div>
+            <div class="label__input">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write something..."
+                style="height: 200px;"
+              ></textarea>
+            </div>
+            <div class="label__input">
+              <input type="submit" value="Submit" class="button submitBtn" />
+            </div>
+          </form>
+        </div>
+        <div class="contact__info">
+          <div class="contact__info__content">
+            <h3 class="contact__info__title subtitle">Contact Info</h3>
+            <p class="contact__info__address">1502 N Elm St, Fairmont, MN, 56031</p>
+            <p class="contact__info__country">United Stated</p>
+            <p class="contact__info__phone">+00 123-456-789</p>
+            <p class="contact__info__email">email@yourdomain.com</p>
+            <p class="contact__info__website">www.yourdomain.com</p>
+            <div class="contact__info__social">
+              <span><i class="fab fa-facebook-square"></i></span>
+              <span><i class="fab fa-instagram"></i></span>
+              <span><i class="fab fa-twitter-square"></i></span>
+              <span><i class="fab fa-pinterest-square"></i></span>
+              <span><i class="fab fa-youtube"></i></span>
+              <span><i class="fab fa-google-plus"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Contact Section -->
+
+    <!-- Start of Footer Section -->
+
+    <footer>&copy; 2020 Copyright Actone</footer>
+
+    <!-- End of Footer Section -->
   </body>
 </html>
